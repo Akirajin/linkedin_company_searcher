@@ -22,6 +22,8 @@ def find_all_urls_and_save_in():
         company_url[company] = result
 
     save_every_company_to_output_file(company_url)
+    for k, v in company_url.items():
+        print(f'{k} {v}')
 
 
 def get_every_company_name_from_csv_files(path):
